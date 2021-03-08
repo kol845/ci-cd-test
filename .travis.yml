@@ -11,7 +11,7 @@ script:
 before_deploy:
   - npm build
   #Change name of deployment folder
-  - mv /public /dist
+  - mv public/ dist
 after_deploy:
   # Slack integration
   # Email
