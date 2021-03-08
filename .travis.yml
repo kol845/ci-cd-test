@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - 15
+cache:
+  directories:
+    - node_modules
+  
+script:
+  - npm test
+  - npm run author
+before_deploy:
+  - npm build
+  #Change name of deployment folder
+  - mv /public /dist
+after_deploy:
+  # Slack integration
+  # Email
+  # etc
+deploy:
+  provider: script
+  script: echo "Add deployment command"
+  on:
+    branch: main

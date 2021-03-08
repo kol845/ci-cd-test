@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "author": "echo 'PEBO IS THE AUTHOUR. BOW DOWN.'"
   },
   "dependencies": {
     "gatsby": "^3.0.1",
