@@ -20,4 +20,5 @@ deploy:
   provider: script
   script: echo "Add deployment command"
   on:
+    # Will only happen on 'main' branch
     branch: main
